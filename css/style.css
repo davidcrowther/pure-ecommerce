@@ -25,8 +25,26 @@ body {
     background: #333333;
     color: #aaaaaa;
     font-size: 14px;
-    height: 200px;
     position: relative;
+}
+
+.footer .footer-menu {
+	padding: 0 0 50px;
+	font-family: 'Lato', sans-serif;
+}
+
+.footer .footer-menu h4 {
+	text-transform: uppercase;
+	color: #eee;
+	font-weight: 400;
+	margin: 0 0 15px;
+	font-size: 15px;
+	font-family: 'Lato', sans-serif;
+}
+
+.footer .footer-menu ul li {
+	list-style: none;
+	font-size: 13px;
 }
 
 .footer a {
@@ -144,7 +162,7 @@ h3 {
 }
 
 .bg-red {
-    background: #c03e41;;
+    background: #c03e41;
     color: #fff;
 }
 
@@ -415,6 +433,15 @@ h3 {
     font-weight: 300;
     font-size: 14px;
     border-radius: 4px;
+	transition: background 0.4s ease;
+    -webkit-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+}
+
+.consult-line .free-consult:hover {
+	text-decoration: none;
+	background: #BE0004;
 }
 
 .consult-line .free-consult b {
@@ -468,13 +495,29 @@ h3 {
 .who-are-we .video-box {
     width: 100%;
     max-width: 570px;
-    height: 337px;
     margin: 38px auto 0;
     background: url("../images/video-box.jpg") no-repeat bottom;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
+	padding: 2% 2% 1px;
+	position: relative;
+	overflow: hidden;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .wr-box {
@@ -908,6 +951,59 @@ h3 {
 
 /*------- /End Landing #1  ---------*/
 
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border: 1px solid #D6E9C6;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+  margin: 2px 0 3px 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}
+
+.filled {
+	font-size: 12px;
+	padding: 2px 0;
+	color: #c03e41;
+}
+
+.error-message {
+	color: #c03e41;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.bg-red .filled {
+	color: #fff;
+}
+
 @media (min-width: 992px) and (max-width: 1200px) {
     .ipad-v {
         padding: 50px;
@@ -956,10 +1052,13 @@ h3 {
 
 
 @media (max-width: 768px) {
+
+	.who-are-we .video-box {
+		padding: 3% 3.5% 0;
+	}
     .navbar-default .navbar-collapse {
         font-size: 14px;
     }
-
     .navbar-default .navbar-collapse a:after {
         display: none;
     }

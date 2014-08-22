@@ -1,5 +1,7 @@
 jQuery(document).ready(function(){
 
+	$('.parsley-form').parsley();
+
     // Active PLACEHOLDER for IE  ----------------------------------------------
     if(!$.placeholder.input || !$.placeholder.textarea) {}
     // END Active PLACEHOLDER for IE  ----------------------------------------------
@@ -24,7 +26,7 @@ jQuery(document).ready(function(){
 
 
     jQuery(".testimonial-slides, #main-slider").responsiveSlides({
-        auto: false,             // Boolean: Animate automatically, true or false
+        auto: true,             // Boolean: Animate automatically, true or false
         speed: 500,            // Integer: Speed of the transition, in milliseconds
         timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
         pager: false,           // Boolean: Show pager, true or false
