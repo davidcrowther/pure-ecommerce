@@ -261,21 +261,21 @@ immediately,
                                 <input type="text" class="form-control" placeholder="Your name" name="cm-name" data-parsley-range="[2, 20]" data-parsley-group="block1" required>
                             </p>
                             <p>
-                                <input type="email" class="form-control" placeholder="Your mail" name="cm-dlydi-dlydi" data-parsley-type="email" data-parsley-group="block1" required>
+                                <input type="email" class="form-control" placeholder="Your email" name="cm-dlydi-dlydi" data-parsley-type="email" data-parsley-group="block1" required>
                             </p>
                             <p>
-                                <input type="text" class="form-control" placeholder="Your phone" name="cm-f-ekhj" data-parsley-type="number" data-parsley-group="block1" required>
+                                <input type="text" class="form-control" placeholder="Your phone" name="cm-f-ekhj" data-parsley-pattern="/^[0-9()\-+ ]+$/" data-parsley-group="block1" required>
                             </p>
                         </div>
                         <div class="col-md-6">
                             <p>
-                                <input type="text" class="form-control" placeholder="How did you hear about us?" name="cm-f-ekhy" data-parsley-range="[5, 40]" data-parsley-group="block2" required>
+                                <input type="text" class="form-control" placeholder="How did you hear about us?" name="cm-f-ekhy">
                             </p>
                             <p>
-                                <input type="text" class="form-control" placeholder="Budget" name="cm-f-jdudh" data-parsley-range="[3, 40]" data-parsley-group="block2" required>
+                                <input type="text" class="form-control" placeholder="Budget" name="cm-f-jdudh" data-parsley-pattern="/[0123456789]/" data-parsley-group="block2" required>
                             </p>
                             <p>
-                                <input type="text" class="form-control" placeholder="Question or comments" name="cm-f-jduhr" data-parsley-range="[5, 40]" data-parsley-group="block2" required>
+                                <input type="text" class="form-control" placeholder="Question or comments" name="cm-f-jduhr">
                             </p>
                         </div>
                     </div>
