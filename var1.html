@@ -412,27 +412,24 @@ a new revenue stream!</p>
             <form class="parsley-form" action="http://mineralmarketing.createsend.com/t/d/s/dlydi/">
                 <div class="row form-box">
                     <div class="col-md-4 col-md-offset-7">
-                        <p>
-							<input type="text" class="form-control" placeholder="Your name" name="cm-name" data-parsley-range="[2, 20]" data-parsley-group="block1" required>
-						</p>
-						<p>
-							<input type="email" class="form-control" placeholder="Your mail" name="cm-dlydi-dlydi" data-parsley-type="email" data-parsley-group="block1" required>
-						</p>
-						<p>
-							<input type="text" class="form-control" placeholder="Your phone" name="cm-f-ekhj" data-parsley-type="number" data-parsley-group="block1" required>
-						</p>
-                        <p>
-							<input type="text" class="form-control" placeholder="How did you hear about us?" name="cm-f-ekhy" data-parsley-range="[5, 40]" data-parsley-group="block2" required>
-						</p>
-						<p>
-							<input type="text" class="form-control" placeholder="Budget" name="cm-f-jdudh" data-parsley-range="[3, 40]" data-parsley-group="block2" required>
-						</p>
-						<p>
-							<input type="text" class="form-control" placeholder="Question or comments" name="cm-f-jduhr" data-parsley-range="[5, 40]" data-parsley-group="block2" required>
-						</p>
-						<p class="submit-wrap">
-                            <input type="submit" class="btn btn-lg btn-danger validate" value="Send">
-                        </p>
+                            <p>
+                                <input type="text" class="form-control" placeholder="Your name" name="cm-name" data-parsley-range="[2, 20]" data-parsley-group="block1" required>
+                            </p>
+                            <p>
+                                <input type="email" class="form-control" placeholder="Your email" name="cm-dlydi-dlydi" data-parsley-type="email" data-parsley-group="block1" required>
+                            </p>
+                            <p>
+                                <input type="text" class="form-control" placeholder="Your phone" name="cm-f-ekhj" data-parsley-pattern="/^[0-9()\-+ ]+$/" data-parsley-group="block1" required>
+                            </p>
+                            <p>
+                                <input type="text" class="form-control" placeholder="How did you hear about us?" name="cm-f-ekhy">
+                            </p>
+                            <p>
+                                <input type="text" class="form-control" placeholder="Budget" name="cm-f-jdudh" data-parsley-pattern="/[0123456789]/" data-parsley-group="block2" required>
+                            </p>
+                            <p>
+                                <input type="text" class="form-control" placeholder="Question or comments" name="cm-f-jduhr">
+                            </p>
                     </div>
                 </div>
             </form>
