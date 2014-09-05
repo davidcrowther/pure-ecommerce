@@ -9,7 +9,7 @@ body {
     border-bottom: 1px solid #999;
 	background: #fff;
 	width: 100%;
-	z-index: 20;
+	z-index: 100;
 }
 
 .header .navbar-brand {
@@ -1106,7 +1106,6 @@ textarea.parsley-error {
 	.header {
 		min-height: 65px;
 		height: auto;
-		z-index: 100;
 	}
 }
 
